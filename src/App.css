@@ -1,0 +1,134 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+nav {
+  background-color: #282c34 !important;
+  color: #61dafb !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  border-bottom: 2px solid #61dafb;
+}
+.navbar-brand {
+  color: black !important;
+  padding: 5px;
+}
+ul {
+  display: flex !important;
+  margin: 5px;
+}
+ul > li {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+.list-group li {
+  color: #282c34 !important;
+}
+.list-group .listing:hover {
+  background-color: #282c34;
+  color: #61dafb !important;
+}
+ul > li a {
+  display: flex !important;
+  /* color: #61dafb !important; */
+  align-items: center;
+  color: #61dafb !important;
+}
+.color-blue {
+  background-color: #282c34 !important;
+  color: #61dafb !important;
+  /* font-weight: bold; */
+}
+.bg-img img {
+  height: 600px;
+  width: 100%;
+}
+.back-style {
+  background-color: #61dafb;
+
+  border-radius: 0px 100% 100% 0px;
+}
+.bg-img {
+  background-color: #282c34;
+  height: 600px;
+  border-bottom: 2px solid #61dafb;
+}
+.bg-img p {
+  color: white;
+  position: relative;
+  top: 180px;
+  padding: 20px;
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+  text-align: center;
+}
+.typewriter h1 {
+  color: #61dafb;
+  position: relative;
+  top: 174px;
+  font-family: sans-serif;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid #61dafb; /* The typwriter cursor */
+  white-space: wrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #61dafb;
+  }
+}
+
+.flex-row {
+  /* display: flex; */
+  /* flex-direction: row; */
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.back-blue {
+  background: #282c34;
+}
+/* 
+@media screen and (max-width: 570px) {
+  .typewriter h1 {
+    font-size: 28px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .typewriter h1 {
+    font-size: 33px;
+  }
+} */
+@media screen and (max-width: 600px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}

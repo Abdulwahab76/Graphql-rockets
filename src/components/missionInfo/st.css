@@ -1,0 +1,8 @@
+
+#olh{height:"450px"}
+@media only screen and (max-width: 400px) {
+    #olh {
+        height:"100px"
+
+    }
+  }
